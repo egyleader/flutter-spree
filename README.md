@@ -1,4 +1,4 @@
-# Flutter spree <img src="android\app\src\main\res\mipmap-hdpi\ic_launcher.png" style="zoom:67%;" />
+# Flutter spree <img src="android\app\src\main\res\mipmap-hdpi\ic_launcher.png" style="zoom:40%;" />
 Doesn't Have couple of hours every time you type *flutter create new-project* ?? then this repo is for you ,
  Flutter Spree is Starter Boilerplate project for flutter to kickstart your project without spending hours deleting comments , integrating services , organizing files  or copying helpers from other projects so you can focus on building your project .
 
@@ -7,6 +7,7 @@ Doesn't Have couple of hours every time you type *flutter create new-project* ??
 - Scalable files and folders architecture 
 - Linitng Using Pendantic package 
 - .env file support for const sensitive information (like api tokens)
+- shared preferences support with helper functions 
 
 
 
@@ -14,7 +15,10 @@ Doesn't Have couple of hours every time you type *flutter create new-project* ??
 
 just clone this project and start working ,, no other tricks for now ! 
 
+## Shared Prefrences 
 
+spree app comes with the Shared Prefrences Support by default using a singleton that you 
+can use by calling *Prefs.yourMethod(args)* anywhere in your app .
 
 ## .env
 

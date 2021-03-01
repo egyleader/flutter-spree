@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:spree/utils/helpers/env.dart';
+import 'package:spree/utils/services/prefrences.dart';
 
 void main() async {
   await WidgetsFlutterBinding.ensureInitialized();
   await Env.init(); // loading environmental values
+  await Prefs.init();
   runApp(MyApp());
 }
 
