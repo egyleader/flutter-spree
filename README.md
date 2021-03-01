@@ -1,4 +1,4 @@
-# Flutter spree
+# Flutter spree <img src="android\app\src\main\res\mipmap-hdpi\ic_launcher.png" style="zoom:67%;" />
 Doesn't Have couple of hours every time you type *flutter create new-project* ?? then this repo is for you ,
  Flutter Spree is Starter Boilerplate project for flutter to kickstart your project without spending hours deleting comments , integrating services , organizing files  or copying helpers from other projects so you can focus on building your project .
 
@@ -6,15 +6,26 @@ Doesn't Have couple of hours every time you type *flutter create new-project* ??
 
 - Scalable files and folders architecture 
 - Linitng Using Pendantic package 
-- 
+- .env file support for const sensitive information (like api tokens)
 
 
 
 ## Getting Started
 
-just clone this project and start working ,,
+just clone this project and start working ,, no other tricks for now ! 
 
 
+
+## .env
+
+This is a zero-dependency helper that loads environment variables from a `.env` 
+witch is a concept inspired by [the 12factor app](https://12factor.net/config)  and the implementation of [lavravel](https://laravel.com/) 
+you can use the .env file with 4 easy steps :
+
+1. rename .env.example to .env file and make sure it is in .gitignore
+2. add your env consts to it like this *API_TOKEN=Token* 
+3. initialize it as early as you can in your app by *Env.init()* (done for you already 😉)
+4. load the env value you want with *Env.load(settingName)*
 
 ## Helping
 
