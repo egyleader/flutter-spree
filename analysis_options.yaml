@@ -1,1 +1,7 @@
 include: package:pedantic/analysis_options.yaml
+
+analyzer:
+  errors:
+    # some of the linting rules have been disabled for consistency and convienience 
+     omit_local_variable_types: false
+     curly_braces_in_flow_control_structures: false

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:spree/utils/helpers/env.dart';
 
-void main() {
+void main() async {
+  await WidgetsFlutterBinding.ensureInitialized();
+  await Env.init(); // loading environmental values
   runApp(MyApp());
 }
 
@@ -27,11 +30,15 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-     
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Api key :  ' + Env.load('API_KEY'),
+            ),
+          ],
+        ),
       ),
     );
   }
