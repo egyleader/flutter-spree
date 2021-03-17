@@ -25,7 +25,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.5
-
+  easy_localization: ^3.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +46,7 @@ flutter:
     - .env
     - assets/images/
     - assets/audio/
+    - assets/translations/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
