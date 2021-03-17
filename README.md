@@ -5,7 +5,7 @@ Doesn't Have couple of hours every time you type *flutter create new-project* ??
 ## What You Get ??
 
 - Scalable files and folders architecture 
-- Linitng Using Pendantic package 
+- Linitng Using Pendantic package (witch google devs use )
 - .env file support for const sensitive information (like api tokens)
 - shared preferences support with helper functions 
 

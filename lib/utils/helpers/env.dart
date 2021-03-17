@@ -7,15 +7,15 @@ import 'package:flutter/services.dart' show rootBundle;
 class Env {
   static Map<String, String> _envMap = {};
 
-  static String load(String setting) =>
+  static String? load(String setting) =>
       _envMap.containsKey(setting) ? _envMap[setting] : '';
 
   static void clear() => _envMap.clear();
 
-// loads the .env file as a string and parse it to a map
+// loads the '.env'file as a string and parse it to a map
 // ready to get any of them anywhere in the app,,
 // call this as early as you need it on your app
-  static void init() async {
+  static Future<void> init() async {
     String _envString = await rootBundle.loadString('.env');
     List<String> _lines = _envString.split('\n');
     Map<String, String> _map = {};
