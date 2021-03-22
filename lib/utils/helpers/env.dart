@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart' show rootBundle;
 
-// this helper class gives you the access to envieronmental values
-// in the .env file ,, this enables you to flavor your app depending on
-// differnt dev stages and flavors ..
-
+/// this helper class gives you the access to envieronmental values
+/// 
+/// in the .env file ,, this enables you to flavor your app depending on
+/// differnt dev stages and flavors ..
 class Env {
   static Map<String, String> _envMap = {};
 
@@ -12,9 +12,10 @@ class Env {
 
   static void clear() => _envMap.clear();
 
-// loads the '.env'file as a string and parse it to a map
-// ready to get any of them anywhere in the app,,
-// call this as early as you need it on your app
+/// loads the '.env' file as a string and parses it 
+
+/// to ready to get any of them anywhere in the app,,
+/// call this as early as you need it on your app
   static Future<void> init() async {
     String _envString = await rootBundle.loadString('.env');
     List<String> _lines = _envString.split('\n');
