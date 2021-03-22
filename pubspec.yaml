@@ -23,11 +23,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  shared_preferences: ^2.0.5
-  easy_localization: ^3.0.0
   animations: ^2.0.0
-  
+  cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
+  path_provider: ^2.0.1
+  shared_preferences: ^2.0.5
+  sqflite: ^2.0.0+3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -42,7 +44,6 @@ flutter:
     - assets/images/
     - assets/audio/
     - assets/translations/
- 
   # fonts:
   #   - family: Schyler
   #     fonts:
